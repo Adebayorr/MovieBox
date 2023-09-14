@@ -1,13 +1,161 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  margin: 0;
 }
+
+.nav {
+  padding-top: 1rem;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.logo-title {
+  color: #FFF;
+  font-family:'DM Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.signup-menu  {
+  display: inline-flex;
+  width: 5rem;
+  justify-content: space-between;
+
+}
+
+.Hero {
+  background-image: url(./assets/images/keanu-reaves.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.search-box {
+  border: 0;
+  background-color: transparent;
+  width: 250px;
+  color: #FFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.search-box:hover,
+.search-box:active, .search-box:focus {
+  border: 0;
+  outline: none;
+}
+
+.search-box::placeholder {
+  color: #FFF;
+  /* font-family: DM Sans; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.signup-menu >a {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 50px;
+  gap: 24px;
+}
+
+
+.logo-title {
+  color: #FFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  width: 40%;
+  margin-left: 98px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-desc {
+  width: 60%;
+  color: #FFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.hero-cta {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 8px;
+  width:11rem;
+  padding: 6px 16px;
+  color: #FFF;
+  background-color: #BE123C;
+  border-radius: 6px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.hero-title {
+  color: #FFF;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+
