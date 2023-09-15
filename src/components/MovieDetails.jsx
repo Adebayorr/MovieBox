@@ -4,7 +4,10 @@ import SideNav from "./sub-components/SideNav";
 const MovieDetails = () => {
     return ( 
         <>
-            <SideNav />
+            <div className="movie-details_container">
+                <SideNav />
+            </div>
+           
         </>
      );
 }

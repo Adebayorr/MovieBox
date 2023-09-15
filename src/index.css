@@ -83,6 +83,19 @@
   text-decoration: none;
 }
 
+.menu {
+  background-color: #BE123C;
+  border-radius: 50%;
+  padding: .3rem .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  color: #FFF;
+}
+
 .logo-wrapper {
   display: inline-flex;
   align-items: center;
@@ -158,6 +171,11 @@
   line-height: 56px;
 }
 
+.top-ten-title {
+ text-align: center;
+ margin-top: 2rem;
+}
+
 .poster {
   /* width: 250px; */
   /* height: 370px; */
@@ -192,7 +210,7 @@
 
 .side-nav {
   width: 226px;
-  height: 982px;
+  height: 55rem;
   flex-shrink: 0;
   border-radius: 0px 45px 45px 0px;
   border: 1px solid #333;
@@ -202,15 +220,21 @@
 
 .side-link {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: none;
   height: 86px;
   text-decoration: none;
   color: #666;
   transition: 0.4s ease-in;
-  gap: 6px;
-  padding: 0 40px;
+
+}
+
+.wrap-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
 }
 
 .side-link > h3 {
@@ -255,18 +279,27 @@
 
 .logout {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0 auto;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
-
+  gap: 12px;
+  text-transform: initial;
+  color: #666;
+  margin: 1rem;
 }
 
 .log-out {
   text-decoration: none;
 }
+
+.movie-details_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1140px) {
   .top-ten-wrapper {

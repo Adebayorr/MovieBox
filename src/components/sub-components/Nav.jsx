@@ -1,6 +1,6 @@
 import logo from '../../assets/icons/MovieBox-Logo.png'
 import SearchBar from './SearchBar'
-import HiOutlineMenuAlt4 from 'react-icons/hi'
+import {HiOutlineMenuAlt4} from 'react-icons/hi'
 function Logo () {
 
     return (
@@ -16,8 +16,12 @@ function SignAndMenu () {
     return (
         <>
         <div className="signup-menu">
-            <a href="/">Sign up</a>    {/**Update this link with react router */}
-            <HiOutlineMenuAlt4 />
+            <a href="/">Sign up</a> 
+               {/**Update this link with react router */}
+            <div className="menu">
+            <HiOutlineMenuAlt4 className='hamburger'/>
+            </div>
+            
         </div>
         </>
     )

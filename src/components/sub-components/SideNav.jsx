@@ -18,20 +18,32 @@ const SideNav = () => {
             </div>
             <nav className="side-nav-wrapper">
                 <a href="/" className="side-link">
-                   <GoHome />
-                   <h3>Home</h3>
+                   <span className="wrap-link">
+                    <GoHome />
+                    <h3>Home</h3>
+                   </span>
                 </a>
                 <a href="/" className="side-link">
+                <span className="wrap-link">
                    <FiVideo />
                    <h3>Movies</h3>
+                </span>
+                   
                 </a>
                 <a href="/" className="side-link">
+                <span className="wrap-link">
                    <PiTelevisionSimpleLight />
                    <h3>TV Series</h3>
+                </span>
+                    
+                   
                 </a>
                 <a href="/" className="side-link">
-                   <LiaCalendarSolid />
-                   <h3>Upcoming</h3>
+                <span className="wrap-link">
+                    <LiaCalendarSolid />
+                    <h3>Upcoming</h3>
+                </span>
+                   
                 </a>
             </nav>
             <div className="nav-more">
@@ -41,7 +53,7 @@ const SideNav = () => {
             </div>
             <a href='/' className="logout">
                 <IoLogOutOutline className='log-out'/>
-                LOG OUT
+                Log out
             </a>
         </div>
         </>

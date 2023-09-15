@@ -1,24 +1,27 @@
+import { useEffect, useState } from "react";
 import Card from "./Card";
 
 
-function TopTen() {
-    // const options = {method: 'GET', headers: {accept: 'application/json'}};
-    const getTopMovies = () => {
-        fetch(`https://api.themoviedb.org/3/account/null/rated/movies?api_key=cf9a9bad102197a1ddd80162feedb935&language=en-US&page=1`   )
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-    }
-    getTopMovies()
 
+function TopTen() {
+    const [movies, setMovies] = useState([])
+    
+    useEffect(() => {
+        fetch('https://api.themoviedb.org/3/discover/movie?api_key=cf9a9bad102197a1ddd80162feedb935')
+        .then(response => {
+            return response.json()      
+        })
+        .then(json => setMovies(json.results.slice(0, 10)))
+        .catch(err => console.error(err));
+    }, []) 
+    console.log(movies)
     return ( 
         <>
+        <h1 className="top-ten-title">Top Ten Movies</h1>
         <div className="top-ten-wrapper">
             
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {movies.map(movie => <Card movie={movie} />
+                )}
         </div>
         </>
      );
